@@ -1550,6 +1550,7 @@ footer .footer-logo {
   filter: brightness(0) invert(1);
 }
 
+/* --- FINAL HEADER OVERLAP FIX FOR ALL iPADS --- */
 @media (min-width: 780px) {
   header.header {
     position: fixed;
@@ -1560,9 +1561,10 @@ footer .footer-logo {
     background: #ffffff;
   }
 
+  /* Only push the first content area down, not all sections */
   main,
   .page-hero:first-of-type {
-    padding-top: 164px !important;
+    padding-top: 164px !important; /* matches header height */
   }
 
   .footer {
