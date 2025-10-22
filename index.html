@@ -3,78 +3,143 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Ambassador | Home</title>
-  <link rel="stylesheet" href="style.css">
+  <title>The Ambassador Classic Barbershop</title>
+  <script src="music.js"></script>
+  <link rel="icon" type="image/png" href="images/abcde.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Inria+Serif:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-<body>
 
-  <!-- Navbar -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">The Ambassador</div>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="branches.html">Our Branches</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-content">
+      <img class="logo" alt="The Ambassador Logo" src="images/logo.png"/>
+
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
+      <nav class="nav">
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="services.html" class="nav-link">SERVICES</a> 
+        <a href="branches.html" class="nav-link">OUR BRANCHES</a>
+        <a href="contact.html" class="btn btn-contact">CONTACT US</a>
+      </nav>
+    </div>
+
+    <div class="header-divider"></div>
+  </header> 
 
   <!-- Hero Section -->
   <section class="hero">
-    <img src="https://via.placeholder.com/1200x400?text=The+Ambassador+Barber+Shop" alt="Barber Shop Banner">
-    <h1>The Ambassador</h1>
-    <p>Classic Barber Shop and Tattoo Co.</p>
+    <img class="hero-image" alt="Hero Background" src="images/hero.jpg"/>
   </section>
 
-  <!-- Services Preview -->
-  <section class="preview">
-    <h2>Services</h2>
-    <div class="grid">
-      <img src="https://via.placeholder.com/400x250?text=Barber+Service" alt="">
-      <p>Where classic style meets true craftsmanship.</p>
-    </div>
-    <a href="services.html" class="btn">View Services</a>
-  </section>
-
-  <!-- Products Preview -->
-  <section class="preview">
-    <h2>Products</h2>
-    <div class="grid">
-      <img src="https://via.placeholder.com/400x250?text=Grooming+Products" alt="">
-      <p>Take home the Ambassador experience with premium products made for true style.</p>
-    </div>
-    <a href="#" class="btn">View Products</a>
-  </section>
-
-  <!-- Branches Preview -->
-  <section class="preview">
-    <h2>Branches</h2>
-    <div class="grid">
-      <img src="https://via.placeholder.com/400x250?text=Branch+1" alt="">
-      <img src="https://via.placeholder.com/400x250?text=Branch+2" alt="">
-    </div>
-    <a href="branches.html" class="btn">Discover More</a>
-  </section>
-
-  <!-- Reviews -->
-  <section class="reviews">
-    <h2>Reviews</h2>
-    <div class="review-box">
-      <p>"Best barbershop experience ever! Great service and ambiance."</p>
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="grid grid-2">
+        <div class="fade-in">
+          <h2 class="heading">Services</h2>
+          <p class="description">Where classic style meets true craftsmanship. Level up your look at The Ambassador Classic Barbershop, Salon, &amp; Tattoo Co.</p>
+          <button class="btn btn-primary" onclick="window.location.href='contact.html'"> Book Appointment </button>
+        </div>
+        <div class="fade-in delay-200">
+          <div class="service-image">
+            <div class="service-image-overlay"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Call to Action -->
-  <section class="cta">
-    <h2>Ready for a Cut?</h2>
-    <a href="contact.html" class="btn">Book Now!</a>
+  <!-- Products Section -->
+  <section class="section section-gray">
+    <div class="container">
+      <div class="grid grid-2">
+        <div class="fade-in">
+          <img class="product-image" alt="Products" src="images/products.jpg"/>
+        </div>
+        <div class="fade-in delay-200">
+          <h2 class="heading">Products</h2>
+          <p class="description"> Take the Ambassador experience home with premium grooming products made for true style.</p>
+          <div class="button-group">
+            <button class="btn btn-primary" onclick="window.location.href='contact.html'"> View Products </button>
+            <button class="btn btn-secondary" onclick="window.location.href='contact.html'"> Order Here </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>© 2025 The Ambassador Barber Shop</p>
+  <!-- Branches Section -->
+  <section class="branches">
+    <div class="container">
+      <h2 class="section-title">Our Branches</h2>
+      <div class="branch-grid">
+        <div class="branch-card">
+          <img src="images/pampanga.jpeg" alt="Branch 1" />
+          <h3>Pampanga Branch</h3>
+          <p>Solana Plaza, Bacolor, Pampanga</p>
+        </div>
+
+        <div class="branch-card">
+          <img src="images/malolos.jpg" alt="Branch 2" />
+          <h3>Malolos Branch</h3>
+          <p>MCF Lifestyle Hub, Malolos, Bulacan</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Reviews Section -->
+  <section class="section">
+    <div class="container">
+      <h2 class="heading heading-center fade-in">Reviews</h2>
+      <div class="grid grid-3">
+        <div class="card fade-in">
+          <img class="review-image" alt="Review 1" src="images/review1.png"/>
+        </div>
+        <div class="card fade-in delay-200">
+          <img class="review-image" alt="Review 2" src="images/review2.png"/>
+        </div>
+        <div class="card fade-in delay-400">
+          <img class="review-image" alt="Review 3" src="images/review3.png"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-gray">
+    <div class="container cta-section">
+      <h2 class="heading heading-center fade-in">Ready for a Cut?</h2>
+      <button class="btn btn-book fade-in delay-200" onclick="window.location.href='contact.html'"> Book Now!! </button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <img class="footer-divider"/>
+      
+      <div class="footer-content">
+        <img class="footer-logo" alt="The Ambassador Logo" src="images/logo.png"/>
+        
+        <p class="footer-address">The Ambassador Pampanga Branch, Solana Plaza, Jose Abad Santos
+          Ave., Bgy Cabalantian, Bacolor, Pampanga , Bacolor, Philippines,
+          2001
+        </p>
+        
+        <p class="footer-copyright">
+          2025 The Ambassador by Jose John Rivera | All Rights Reserved |
+          Powered by HTML
+        </p>
+        
+        <img class="footer-social" alt="Social Icons" src="images/social-icons.svg"/>
+      </div>
+    </div>
   </footer>
-
 </body>
 </html>
