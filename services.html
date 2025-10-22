@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - The Ambassador Classic Barbershop</title>
+  <script src="music.js"></script>
+  <link rel="icon" type="image/png" href="images/abcde.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Inria+Serif:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-content">
+      <a href="index.html">
+        <img class="logo" alt="The Ambassador Logo" src="images/logo.png"/>
+      </a>
+      
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
+      <nav class="nav">
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="services.html" class="nav-link">SERVICES</a>
+        <a href="branches.html" class="nav-link">OUR BRANCHES</a>
+        <a href="contact.html" class="btn btn-contact">CONTACT US</a>
+      </nav>
+    </div>
+    <img class="header-divider" alt="Divider"/>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="page-title fade-in">Our Services</h1>
+      <p class="page-subtitle fade-in delay-200">
+        Premium grooming services tailored to your style
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="services-grid">
+        <!-- Haircut Service -->
+        <div class="service-card fade-in">
+          <div class="service-card-image" style="background: url('images/services.jpg') 50% 50% / cover;">
+            <div class="service-card-overlay"></div>
+          </div>
+          <div class="service-card-content">
+            <h3 class="service-card-title">Gentleman's Choice</h3>
+            <p class="service-card-description">
+              Personal Consultation, Precious Haircut with Shampoo, Massage, and Hot Towel Treatment.
+            </p>
+            <p class="service-card-price">₱200</p>
+          </div>
+        </div>
+
+        <!-- Beard Trim Service -->
+        <div class="service-card fade-in delay-200">
+          <div class="service-card-image" style="background: url('images/shave.jpg') 50% 50% / cover;">
+            <div class="service-card-overlay"></div>
+          </div>
+          <div class="service-card-content">
+            <h3 class="service-card-title">Beard Trim & Shave</h3>
+            <p class="service-card-description">
+              Expert beard grooming and hot towel shaves for a refined look.
+            </p>
+            <p class="service-card-price">Starts at ₱150</p>
+          </div>
+        </div>
+
+        <!-- The Ambassador Service -->
+        <div class="service-card fade-in delay-400">
+          <div class="service-card-image" style="background: url('images/ambassador.jpg') 50% 50% / cover;">
+            <div class="service-card-overlay"></div>
+          </div>
+          <div class="service-card-content">
+            <h3 class="service-card-title">The Ambassador</h3>
+            <p class="service-card-description">
+              SIGNATURE CUT with Hald Body Massage
+            </p>
+            <p class="service-card-price">Starts at ₱800</p>
+          </div>
+        </div>
+         
+        <!-- Tattoo Service -->
+        <div class="service-card fade-in">
+          <div class="service-card-image" style="background: url('images/tattoo.jpeg') 50% 50% / cover;">
+            <div class="service-card-overlay"></div>
+          </div>
+          <div class="service-card-content">
+            <h3 class="service-card-title">Tattoo Services</h3>
+            <p class="service-card-description">
+              Custom tattoo designs by experienced artists.
+            </p>
+            <p class="service-card-price">Starts at ₱1800</p>
+          </div>
+        </div>
+
+        <!-- Salon Service -->
+        <div class="service-card fade-in delay-200">
+          <div class="service-card-image" style="background: url('images/rebondd.webp') 50% 50% / cover;">
+            <div class="service-card-overlay"></div>
+          </div>
+          <div class="service-card-content">
+            <h3 class="service-card-title">Hair Rebond</h3>
+            <p class="service-card-description">
+              Full salon treatments including styling and treatments.
+            </p>
+            <p class="service-card-price">Starts at ₱2588</p>
+          </div>
+        </div>
+
+        <!-- Nails Package -->
+        <div class="service-card fade-in delay-400">
+          <div class="service-card-image" style="background: url('images/gel.jpg') 50% 50% / cover;">
+            <div class="service-card-overlay"></div>
+          </div>
+          <div class="service-card-content">
+            <h3 class="service-card-title">Gel Manicure</h3>
+            <p class="service-card-description">
+              Polished perfection, one gel manicure at a time.
+            </p>
+            <p class="service-card-price">Starts at ₱600</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section section-gray">
+    <div class="container cta-section">
+      <h2 class="heading heading-center fade-in">Ready to Book?</h2>
+      <button class="btn btn-primary" onclick="window.location.href='contact.html'"> Book Appointment </button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <img 
+        class="footer-divider" 
+        alt="Divider" 
+        src=""
+      />
+      
+      <div class="footer-content">
+        <img 
+          class="footer-logo" 
+          alt="The Ambassador Logo" 
+          src="images/logo.png"
+        />
+        
+        <p class="footer-address">
+          The Ambassador Pampanga Branch, Solana Plaza, Jose Abad Santos
+          Ave., Bgy Cabalantian, Bacolor, Pampanga , Bacolor, Philippines,
+          2001
+        </p>
+        
+        <p class="footer-copyright">
+          2025 The Ambassador by Jose John Rivera | All Rights Reserved |
+          Powered by HTML
+        </p>
+        
+        <img 
+          class="footer-social" 
+          alt="Social Icons" 
+          src="images/social-icons.svg"
+        />
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

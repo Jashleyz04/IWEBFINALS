@@ -1,0 +1,1452 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  overflow-x: hidden;
+}
+
+/* Container */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 164px;
+  background-color: #ffffff;
+  z-index: 1000;
+  padding: 12px 60px;
+}
+
+.header-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 300px;
+  height: 126px;
+  object-fit: cover;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 46px;
+}
+
+.nav-link {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000000;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.nav-link:hover {
+  opacity: 0.7;
+}
+
+.header-divider {
+  width: 100%;
+  height: 2px;
+  background-color: #b08d57;
+  margin: 0 auto;
+  border-radius: 2px;
+  opacity: 0.9;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Buttons */
+.btn {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-contact {
+  padding: 14px 24px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+.btn-contact:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.btn-primary {
+  padding: 12px 32px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.btn-primary:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.btn-secondary {
+  padding: 12px 32px;
+  background-color: #acabab;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(172, 171, 171, 0.9);
+}
+
+.btn-discover {
+  width: 201px;
+  height: 52px;
+  background: url('images/rectangle.svg') no-repeat center;
+  background-size: 100% 100%;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  border: none;
+}
+
+.btn-discover:hover {
+  opacity: 0.9;
+}
+
+.btn-book {
+  padding: 20px 32px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+.btn-book:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  padding-top: 164px;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; 
+  display: block;
+}
+
+.hero-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  object-fit: cover;
+}
+
+/* Sections */
+.section {
+  padding: 64px 0;
+}
+
+.section-gray {
+  background-color: #f7f7f7;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  gap: 32px;
+  align-items: center;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Typography */
+.heading {
+  font-family: 'Jacques Francois', serif;
+  font-weight: 400;
+  font-size: 48px;
+  color: #000000;
+  letter-spacing: -0.96px;
+  margin-bottom: 24px;
+}
+
+.heading-center {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.description {
+  font-family: 'Inria Serif', serif;
+  font-weight: 300;
+  font-size: 32px;
+  color: #000000;
+  letter-spacing: -0.32px;
+  line-height: 1.4;
+  margin-bottom: 32px;
+}
+
+/* Service Image */
+.service-image {
+  border-radius: 8px;
+  overflow: hidden;
+  height: 393px;
+}
+
+.service-image-overlay {
+  width: 100%;
+  height: 100%;
+  background: url('images/services.jpg') 50% 50% / cover;
+}
+
+/* Product Image */
+.product-image {
+  width: 100%;
+  height: 392px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  gap: 16px;
+}
+
+/* Branches */
+.branches-wrapper {
+  position: relative;
+  height: 341px;
+  margin-bottom: 58px;
+}
+
+.branches-image {
+  width: 100%;
+  height: 100%;
+}
+
+.btn-discover {
+  position: absolute;
+  bottom: -58px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.branch-labels {
+  margin-top: 96px;
+}
+
+.branch-label {
+  text-align: center;
+}
+
+.branch-name {
+  font-family: 'Jacques Francois', serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #000000;
+}
+
+/* Card */
+.card {
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  padding: 32px;
+  background-color: #ffffff;
+}
+
+.review-image {
+  width: 100%;
+  height: 158px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* CTA Section */
+.cta-section {
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  position: relative;
+}
+
+.footer-divider {
+  width: 100%;
+  height: 2px;
+  background-color: #797775; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  border: none;
+  opacity: 0.3;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+} 
+
+.footer-logo {
+  width: 337px;
+  height: 132px;
+  object-fit: cover;
+}
+
+.footer-address {
+  font-family: 'Inter', sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+  color: #000000;
+  text-align: center;
+  max-width: 383px;
+  line-height: 1.5;
+}
+
+.footer-copyright {
+  font-family: 'Inter', sans-serif;
+  font-weight: 100;
+  font-size: 9px;
+  color: #000000;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.footer-social {
+  width: 184px;
+  height: 50px;
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fade-in 1s ease forwards;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-400 {
+  animation-delay: 0.4s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Page Hero */
+.page-hero {
+  padding-top: 164px;
+  padding-bottom: 64px;
+  background: linear-gradient(135deg, #f7f7f7 0%, #ffffff 100%);
+  text-align: center;
+}
+
+.page-title {
+  font-family: 'Jacques Francois', serif;
+  font-weight: 400;
+  font-size: 64px;
+  color: #000000;
+  letter-spacing: -1.28px;
+  margin-bottom: 16px;
+}
+
+.page-subtitle {
+  font-family: 'Inria Serif', serif;
+  font-weight: 300;
+  font-size: 24px;
+  color: #000000;
+  letter-spacing: -0.24px;
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.service-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.service-card-image {
+  height: 240px;
+  position: relative;
+}
+
+.service-card-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.service-card-content {
+  padding: 24px;
+}
+
+.service-card-title {
+  font-family: 'Jacques Francois', serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.service-card-description {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.service-card-price {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000000;
+}
+
+/* Branch Detail */
+.branch-detail {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px;
+  align-items: center;
+  margin-bottom: 64px;
+  padding: 48px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.branch-detail-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.branch-detail-title {
+  font-family: 'Jacques Francois', serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.branch-detail-info {
+  margin-bottom: 32px;
+}
+
+.branch-info-item {
+  margin-bottom: 24px;
+}
+
+.branch-info-label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.branch-info-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.6;
+}
+
+/* Map Placeholder */
+.map-placeholder {
+  width: 100%;
+  height: 400px;
+  background-color: #e6e6e6;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  color: #666666;
+  
+}
+
+/* Contact Wrapper */
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 64px;
+  margin-top: 48px;
+}
+
+/* Contact Form */
+.contact-form-container {
+  background-color: #ffffff;
+  padding: 48px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-title {
+  font-family: 'Jacques Francois', serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #000000;
+  margin-bottom: 32px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.form-input,
+.form-textarea {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  padding: 12px 16px;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #000000;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+/* Contact Info */
+.contact-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-info-title {
+  font-family: 'Jacques Francois', serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.contact-info-card {
+  background-color: #f7f7f7;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.contact-info-heading {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.contact-info-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.contact-info-text:last-child {
+  margin-bottom: 0;
+}
+
+.contact-social {
+  background-color: #f7f7f7;
+  padding: 24px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.contact-social-icons {
+  width: 184px;
+  height: 50px;
+  margin-top: 16px;
+}
+
+/* Update navigation links */
+.nav a {
+  text-decoration: none;
+}
+
+/* TABLET STYLES */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    padding: 0 40px;
+  }
+
+ .header {
+    padding: 10px 20px;
+  }
+
+  .logo {
+    width: 120px; 
+    height:65px;
+  }
+
+  .nav-link {
+    font-size: 0.9rem; 
+    margin: 0 8px;
+  }
+
+  .nav {
+    gap: 24px; 
+  }
+
+  .btn-contact {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+
+  .header-content {
+    flex-wrap: nowrap;
+  }
+
+  .btn-contact {
+    font-size: 15px;
+    padding: 12px 20px;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding-top: 140px;
+  }
+
+  .hero-image {
+    height: 450px;
+  }
+
+  /* Sections */
+  .section {
+    padding: 48px 0;
+  }
+
+  /* Grid */
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+
+  /* Typography */
+  .heading {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .heading-center {
+    margin-bottom: 36px;
+  }
+
+  .description {
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+
+  /* Page Hero */
+  .page-hero {
+    padding-top: 140px;
+    padding-bottom: 48px;
+  }
+
+  .page-title,
+  .heading {
+    font-size: 1.8rem; /* smaller heading size for better fit */
+  }
+
+
+  .page-subtitle,
+  .description {
+    font-size: 1rem;
+  }
+
+  /* Service Image */
+  .service-image {
+    height: 320px;
+  }
+
+  /* Product Image */
+  .product-image {
+    height: 320px;
+  }
+
+  /* Button Group */
+  .button-group {
+    flex-direction: row;
+    gap: 14px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    font-size: 18px;
+    padding: 11px 28px;
+  }
+
+  /* Services Grid */
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    margin-top: 36px;
+  }
+
+  .service-card-image {
+    height: 220px;
+  }
+
+  .service-card-content {
+    padding: 22px;
+  }
+
+  .service-card-title {
+    font-size: 22px;
+  }
+
+  .service-card-description {
+    font-size: 15px;
+  }
+
+  .service-card-price {
+    font-size: 19px;
+  }
+
+  /* Branches */
+  .branches-wrapper {
+    height: 280px;
+    margin-bottom: 50px;
+  }
+
+  .btn-discover {
+    width: 180px;
+    height: 48px;
+    font-size: 22px;
+    bottom: -50px;
+  }
+
+  .branch-labels {
+    margin-top: 72px;
+  }
+
+  .branch-name {
+    font-size: 22px;
+  }
+
+  /* Branch Detail */
+  .branch-detail {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+    padding: 36px;
+    margin-bottom: 48px;
+  }
+
+  .branch-detail-image img {
+    height: 320px;
+  }
+
+  .branch-detail-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .branch-info-label {
+    font-size: 17px;
+  }
+
+  .branch-info-text {
+    font-size: 15px;
+  }
+
+  /* Card */
+  .card {
+    padding: 28px;
+  }
+
+  .review-image {
+    height: 140px;
+  }
+
+  /* Map Placeholder */
+  .map-placeholder {
+    height: 320px;
+    font-size: 18px;
+  }
+
+  /* Contact Wrapper */
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    margin-top: 36px;
+  }
+
+  .contact-form-container {
+    padding: 36px;
+  }
+
+  .contact-form-title {
+    font-size: 28px;
+    margin-bottom: 28px;
+  }
+
+  .contact-form {
+    gap: 20px;
+  }
+
+  .form-label {
+    font-size: 15px;
+  }
+
+  .form-input,
+  .form-textarea {
+    font-size: 15px;
+    padding: 11px 15px;
+  }
+
+  .contact-info-title {
+    font-size: 28px;
+  }
+
+  .contact-info-card {
+    padding: 22px;
+  }
+
+  .contact-info-heading {
+    font-size: 19px;
+  }
+
+  .contact-info-text {
+    font-size: 14px;
+  }
+
+  .contact-social {
+    padding: 22px;
+  }
+
+  .contact-social-icons {
+    width: 170px;
+    height: 46px;
+  }
+
+  /* CTA Section */
+  .btn-book {
+    font-size: 22px;
+    padding: 18px 28px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 28px 0;
+  }
+
+  .footer-logo {
+    width: 300px;
+    height: 118px;
+  }
+
+  .footer-address {
+    font-size: 11px;
+    max-width: 350px;
+  }
+
+  .footer-copyright {
+    font-size: 8.5px;
+  }
+
+  .footer-social {
+    width: 170px;
+    height: 46px;
+  }
+}
+
+/* MOBILE STYLES - Max width 767px */
+@media screen and (max-width: 767px) {
+  /* Base adjustments */
+  body {
+    min-width: 320px;
+  }
+
+  /* Container */
+  .container {
+    padding: 0 20px;
+  }
+
+  /* Header */
+  .header {
+    height: auto;
+    padding: 16px 0;
+  }
+
+  .header-content {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .logo {
+    width: 200px;
+    height: 84px;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .nav-link {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .btn-contact {
+    width: 100%;
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding-top: 200px;
+  }
+
+  .hero-image {
+    height: 300px;
+  }
+
+  /* Sections */
+  .section {
+    padding: 32px 0;
+  }
+
+  /* Grid */
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  /* Typography */
+  .heading {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  .heading-center {
+    margin-bottom: 24px;
+  }
+
+  .description {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+
+  /* Page Hero */
+  .page-hero {
+    padding-top: 200px;
+    padding-bottom: 32px;
+  }
+
+  .page-title {
+    font-size: 36px;
+  }
+
+  .page-subtitle {
+    font-size: 18px;
+  }
+
+  /* Service Image */
+  .service-image {
+    height: 250px;
+  }
+
+  /* Product Image */
+  .product-image {
+    height: 250px;
+  }
+
+  /* Button Group */
+  .button-group {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
+  /* Services Grid */
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 24px;
+  }
+
+  .service-card-image {
+    height: 200px;
+  }
+
+  .service-card-content {
+    padding: 20px;
+  }
+
+  .service-card-title {
+    font-size: 20px;
+  }
+
+  .service-card-description {
+    font-size: 14px;
+  }
+
+  .service-card-price {
+    font-size: 18px;
+  }
+
+  /* Branches */
+  .branches-wrapper {
+    height: auto;
+    margin-bottom: 80px;
+  }
+
+  .branches-image {
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .btn-discover {
+    width: 160px;
+    height: 42px;
+    font-size: 18px;
+    bottom: -42px;
+  }
+
+  .branch-labels {
+    margin-top: 60px;
+  }
+
+  .branch-name {
+    font-size: 20px;
+  }
+
+  /* Branch Detail */
+  .branch-detail {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 24px;
+    margin-bottom: 32px;
+  }
+
+  .branch-detail-image img {
+    height: 250px;
+  }
+
+  .branch-detail-title {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  .branch-info-label {
+    font-size: 16px;
+  }
+
+  .branch-info-text {
+    font-size: 14px;
+  }
+
+  /* Card */
+  .card {
+    padding: 20px;
+  }
+
+  .review-image {
+    height: 120px;
+  }
+
+  /* Map Placeholder */
+  .map-placeholder {
+    height: 250px;
+    font-size: 16px;
+  }
+
+  /* Contact Wrapper */
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-top: 24px;
+  }
+
+  .contact-form-container {
+    padding: 24px;
+  }
+
+  .contact-form-title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .contact-form {
+    gap: 16px;
+  }
+
+  .form-label {
+    font-size: 14px;
+  }
+
+  .form-input,
+  .form-textarea {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+
+  .contact-info-title {
+    font-size: 24px;
+  }
+
+  .contact-info-card {
+    padding: 20px;
+  }
+
+  .contact-info-heading {
+    font-size: 18px;
+  }
+
+  .contact-info-text {
+    font-size: 13px;
+  }
+
+  .contact-social {
+    padding: 20px;
+  }
+
+  .contact-social-icons {
+    width: 150px;
+    height: 40px;
+  }
+
+  /* CTA Section */
+  .btn-book {
+    width: 100%;
+    font-size: 18px;
+    padding: 16px 24px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 24px 0;
+  }
+
+  .footer-logo {
+    width: 250px;
+    height: 98px;
+  }
+
+  .footer-address {
+    font-size: 11px;
+    max-width: 300px;
+  }
+
+  .footer-copyright {
+    font-size: 8px;
+  }
+
+  .footer-social {
+    width: 150px;
+    height: 40px;
+  }
+
+  .fade-in {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+}
+
+/* PRINT STYLES */
+@media print {
+  .header, .footer, .btn, .nav, .btn-discover, video, img.hero-image {
+    display: none !important;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  * {
+    position: static !important;
+    box-shadow: none !important;
+    background: transparent !important;
+  }
+
+   .container {
+    max-width: 100% !important;
+    padding: 0 20px !important;
+  }
+
+
+  .header-divider, .footer-divider {
+    display: none !important;
+  }
+
+ 
+  .heading, .page-title {
+    color: #000000 !important;
+  }
+
+  a::after {
+    content: " (" attr(href) ")";
+    font-size: 12px;
+  }
+
+  .section, .card, .branch-detail {
+    page-break-inside: avoid;
+  }
+
+  .grid, .grid-2, .grid-3, .services-grid {
+    display: block !important;
+  }
+
+  .fade-in {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* ---------- Responsive Navbar ---------- */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.menu-toggle:hover {
+  transform: scale(1.1);
+}
+
+/* Hide nav on mobile */
+@media (max-width: 767px) {
+  .header-content {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 320px;
+    padding: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+  }
+
+  .nav .btn-contact {
+  display: block;
+  margin: 12px auto; /* Centers the button horizontally */
+  text-align: center;
+  width: 80%; /* Adjust width for balance */
+}
+
+  .nav.show {
+    display: flex;
+    animation: slideDown 0.3s ease;
+  }
+
+  .nav-link {
+    margin: 10px 0;
+    font-size: 1.1rem;
+  }
+
+  .btn-contact {
+    margin-top: 12px;
+    width: 80%;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -10px);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+  }
+}
+
+/* Branch Section */
+.branches {
+  padding: 60px 0;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.branch-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.branch-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.branch-card:hover {
+  transform: translateY(-5px);
+}
+
+.branch-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.branch-card h3 {
+  font-family: "Jacques Francois", serif;
+  margin: 16px 0 8px;
+  font-size: 1.2rem;
+}
+
+.branch-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Responsive for mobile */
+@media (max-width: 767px) {
+  .branch-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header-content {
+    max-width: 1300px;
+  }
+}

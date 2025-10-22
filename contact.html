@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - The Ambassador Classic Barbershop</title>
+  <script src="music.js"></script>
+  <link rel="icon" type="image/png" href="images/abcde.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Inria+Serif:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-content">
+      <a href="index.html">
+        <img class="logo" alt="The Ambassador Logo" src="images/logo.png"/>
+      </a>
+      
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      
+      <nav class="nav">
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="services.html" class="nav-link">SERVICES</a>
+        <a href="branches.html" class="nav-link">OUR BRANCHES</a>
+        <a href="contact.html" class="btn btn-contact">CONTACT US</a>
+      </nav>
+    </div>
+    <img class="header-divider" alt="Divider"/>
+  </header>
+
+  <!-- Contact Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="page-title fade-in">Get In Touch</h1>
+      <p class="page-subtitle fade-in delay-200">
+        We'd love to hear from you. Reach out to us anytime.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-wrapper">
+        <!-- Contact Form -->
+        <div class="contact-form-container fade-in">
+          <h2 class="contact-form-title">Send Us a Message</h2>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" id="phone" name="phone" class="form-input" placeholder="+63 912 345 6789">
+            </div>
+
+            <div class="form-group">
+              <label for="branch" class="form-label">Preferred Branch</label>
+              <select id="branch" name="branch" class="form-input">
+                <option value="">Select a branch</option>
+                <option value="pampanga">Pampanga Branch</option>
+                <option value="malolos">Malolos Branch</option>
+                <option value="bulacan">Bulacan Branch</option>
+                <option value="sanrafael">San Rafael Branch</option>
+                <option value="baliuag">Baliuag Branch</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Tell us how we can help you..." required></textarea>
+            </div>
+
+            <button type="button" class="btn btn-primary btn-full" onclick="window.location.href='mailto:ambrsalonmanagement@gmail.com'"> Send Message </button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info-container fade-in delay-200">
+          <h2 class="contact-info-title">Contact Information</h2>
+
+          <div class="contact-info-card">
+            <h3 class="contact-info-heading">Pampanga Branch</h3>
+            <p class="contact-info-text">
+              Solana Plaza, Jose Abad Santos Ave.<br>
+              Bgy Cabalantian, Bacolor, Pampanga<br>
+              Philippines, 2001
+            </p>
+            <p class="contact-info-text">
+              <strong>Phone:</strong> 0936 900 1182<br>
+              <strong>Email:</strong> ambrsalonmanagement@gmail.com
+            </p>
+          </div>
+
+          <div class="contact-info-card">
+            <h3 class="contact-info-heading">Malolos Branch</h3>
+            <p class="contact-info-text">
+              MCF Lifestyle Hub Unit 200-202<br>
+              Malolos, Bulacan, Philippines, 3000
+            </p>
+            <p class="contact-info-text">
+              <strong>Phone:</strong> 0945 297 3140<br>
+              <strong>Email:</strong> ambrsalonmanagement@gmail.com
+            </p>
+          </div>
+
+          <div class="contact-info-card">
+            <h3 class="contact-info-heading">Bulacan Branch</h3>
+            <p class="contact-info-text">
+              La Residencia, Lot 4 Blk 5, Calumpit, Bulacan
+            </p>
+            <p class="contact-info-text">
+              <strong>Phone:</strong> 0945 297 3140<br>
+              <strong>Email:</strong> ambrsalonmanagement@gmail.com
+            </p>
+          </div>
+
+          <div class="contact-info-card">
+            <h3 class="contact-info-heading">San Rafael Branch</h3>
+            <p class="contact-info-text">
+              Bgy 39A, San Rafael, Bulacan, 3008
+            </p>
+            <p class="contact-info-text">
+              <strong>Phone:</strong> 0936 900 1182<br>
+              <strong>Email:</strong> ambrsalonmanagement@gmail.com
+            </p>
+          </div>
+
+          <div class="contact-info-card">
+            <h3 class="contact-info-heading">Baliuag Branch</h3>
+            <p class="contact-info-text">
+              V. Gonzales St, Baliuag, Bulacan, 3008
+            </p>
+            <p class="contact-info-text">
+              <strong>Phone:</strong> 0969 520 0306<br>
+              <strong>Email:</strong> ambrsalonmanagement@gmail.com
+            </p>
+          </div>
+
+          <div class="contact-info-card">
+            <h3 class="contact-info-heading">Business Hours</h3>
+            <p class="contact-info-text">
+              <strong>All Branches:</strong><br>
+              Monday - Sunday: 8:00 AM - 8:00 PM
+            </p>
+          </div>
+
+          <div class="contact-social">
+            <h3 class="contact-info-heading">Follow Us</h3>
+            <img class="contact-social-icons" alt="Social Icons" src="images/social-icons.svg"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <img class="footer-divider" alt="Divider" src=""/>
+      <div class="footer-content">
+        <img class="footer-logo" alt="The Ambassador Logo" src="images/logo.png"/>
+        <p class="footer-address">
+          The Ambassador Pampanga Branch, Solana Plaza, Jose Abad Santos Ave., Bgy Cabalantian, Bacolor, Pampanga, Philippines, 2001
+        </p>
+        <p class="footer-copyright">
+          2025 The Ambassador by Jose John Rivera | All Rights Reserved | Powered by HTML
+        </p>
+        <img class="footer-social" alt="Social Icons" src="images/social-icons.svg"/>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
